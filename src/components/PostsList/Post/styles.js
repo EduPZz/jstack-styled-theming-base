@@ -1,11 +1,11 @@
 import styled, { ThemeConsumer } from 'styled-components';
 
 export const Container = styled.article`
-  background: ${ ({ theme }) => theme.postBackgroundColor};
+  background: ${ ({ theme }) => theme.curentTheme.postBackgroundColor};
   display: flex;
   flex-direction: column;
   padding: 16px;
-  border-radius: 10px;
+  border-radius: ${ ({ theme }) => theme.commonStyle.borderRadius.postBackgroundColor};
 
   h2 {
     margin: 0 0 8px;
