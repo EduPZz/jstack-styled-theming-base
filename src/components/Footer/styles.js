@@ -9,6 +9,9 @@ export const Container = styled.footer`
   border-radius: 10px;
   justify-content: space-between;
   margin-top: 24px;
+  position: fixed;
+  width: calc(100% - 100px);
+  bottom: 0;
 
   button {
     cursor: pointer;
